@@ -1,20 +1,20 @@
 @font-face {
-  src: url(https://www.personalwaifu.io/fonts/EarthMomma.ttf);
+  src: url(/fonts/EarthMomma.ttf);
   font-family: "oldApple";
   font-display: swap;
 }
 @font-face {
-  src: url(https://www.personalwaifu.io/fonts/EBMain.ttf);
+  src: url(/fonts/EBMain.ttf);
   font-family: "apple";
   font-display: swap;
 }
 @font-face {
-  src: url(https://www.personalwaifu.io/fonts/BattleName.ttf);
+  src: url(/fonts/BattleName.ttf);
   font-family: "battle";
   font-display: swap;
 }
 @font-face {
-  src: url(../../fonts/GeosansLight.ttf);
+  src: url(/fonts/GeosansLight.ttf);
   font-family: "geo";
   font-display: swap;
 }
@@ -243,7 +243,7 @@ a.nav:hover {
 }
 
 img.questionable:hover {
-  cursor: url("https://www.personalwaifu.io/assets/cursor/help.gif"), auto;
+  cursor: url("/assets/cursor/help.gif"), auto;
 }
 
 td,
@@ -332,14 +332,14 @@ div.update {
   height: 100%;
   position: fixed;
   z-index: -11;
-  background: url("https://www.personalwaifu.io/assets/space_bg.gif");
+  background: url("/assets/space_bg.gif");
   background-blend-mode: screen;
   mix-blend-mode: screen;
   opacity: 0.5;
 }
 
 .spacebg2 {
-  background-image: url("https://www.personalwaifu.io/assets/space_bg2.gif");
+  background-image: url("/assets/space_bg2.gif");
   z-index: -12;
 }
 
@@ -388,7 +388,7 @@ div.update {
   border-style: solid;
   padding: 10px;
   padding-bottom: 2px;
-  border-image: url(../assets/EBtble.png) 27 stretch;
+  border-image: url(/main/assets/EBtble.png) 27 stretch;
   border-image-width: 12px;
   background-color: #290829;
   border-image-outset: 0.3;
@@ -405,7 +405,7 @@ div.update {
   height: min-content;
   padding: 7px;
   margin: 0 auto;
-  border-image: url(https://www.personalwaifu.io/main/assets/EBtbleCl.gif) 24 stretch;
+  border-image: url(/main/assets/EBtbleCl.gif) 24 stretch;
   border-image-width: 18px;
   border-width: 10px;
   border-image-outset: 0.6;
@@ -419,7 +419,7 @@ div.update {
   width: 100%;
 }
 .earthbtbleMarker div {
-  background-image: url(../assets/okD.gif);
+  background-image: url(/main/assets/okD.gif);
   width: 18px;
   height: 12px;
   position: absolute;
@@ -783,7 +783,7 @@ div.update {
   image-rendering: pixelated;
   font-family: "apple";
   padding: 5px;
-  border-image: url(../assets/EBtble.png) 35 stretch;
+  border-image: url(/main/assets/EBtble.png) 35 stretch;
   border-image-outset: 0.2;
   width: 250px;
   display: none;
