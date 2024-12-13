@@ -1,0 +1,1449 @@
+@font-face {
+  src: url(https://www.personalwaifu.io/fonts/EarthMomma.ttf);
+  font-family: "oldApple";
+  font-display: swap;
+}
+@font-face {
+  src: url(https://www.personalwaifu.io/fonts/EBMain.ttf);
+  font-family: "apple";
+  font-display: swap;
+}
+@font-face {
+  src: url(https://www.personalwaifu.io/fonts/BattleName.ttf);
+  font-family: "battle";
+  font-display: swap;
+}
+@font-face {
+  src: url(../../fonts/GeosansLight.ttf);
+  font-family: "geo";
+  font-display: swap;
+}
+
+/* Main page stuff!? */
+body {
+  box-shadow: 0 0 150px #290829 inset;
+  font-family: apple;
+  font-size: 24px;
+  color: white;
+  background-color: #8f01a9;
+  margin: 0;
+  padding: 0;
+  overflow: overlay;
+  line-height: 25px;
+  
+}
+body {
+  overflow: hidden;
+  display: block;
+  height: 100vh;
+}
+
+p {
+  color: #f4f2af;
+  margin: 0;
+  padding: 0;
+  animation: puffIn 1.3s;
+  -moz-animation: puffIn 1.3s;
+  -webkit-animation: puffIn 1.3s;
+  -ms-animation: puffIn 1.3s;
+  -o-animation: puffIn 1.3s;
+  animation: puffIn 1.3s;
+  overflow: hidden;
+}
+
+header,
+footer,
+.main {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1344px;
+  text-align: center;
+}
+
+footer {
+  padding-bottom: 25px;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+textarea,
+input,
+optgroup,
+select {
+  background: #290829 !important;
+  color: #ffffff !important;
+  border: none !important;
+  outline: 0 !important;
+  text-align: center;
+  resize: none;
+  margin-top: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 18px;
+  font-weight: normal;
+}
+footer .earthbtble {
+  text-align: center;
+}
+
+.theEnd {
+  text-align: center;
+}
+
+.webring {
+  font-size: 11px;
+  text-align: center;
+  outline: white 1px solid;
+  width: 150px;
+  padding: 10px;
+  margin: 0px auto 10px;
+}
+
+.webring-info {
+  grid-column: col-start 1 / span 2;
+  grid-row: 1;
+}
+
+.webring-prev,
+.webring-next {
+  grid-row: 2;
+}
+
+.webring-prev {
+  grid-column: col-start 1;
+}
+.webring-next {
+  grid-column: col-start 2;
+}
+
+.webring-info img {
+  width: 174px;
+  image-rendering: pixelated;
+}
+
+.webring-prev img,
+.webring-next img {
+  width: 28px;
+  image-rendering: pixelated;
+}
+
+.yw-title {
+  font-family: "Yesterweb Monster", sans-serif;
+  color: #fff;
+  font-size: 11px;
+}
+.yw-content {
+  font-size: 10px;
+}
+
+.yw-notice {
+  color: #fff;
+}
+.yw-nav {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.yw-error {
+  display: none;
+}
+
+.wrapper,
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(10, [col-start] 3fr);
+  grid-gap: 15px;
+  filter: drop-shadow(0px 0px 10px black);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.sticker {
+  filter: drop-shadow(0px 2px 4px rgba(50, 50, 93, 0.25))
+    drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.yw-widget-full {
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: #290829dd;
+  line-height: 20px;
+  font-size: 21px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  outline: #fff solid 1px;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+/* The Scrollbar for the page */
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 1px solid #290829;
+}
+::-webkit-scrollbar-thumb {
+  background: #6bd3bd;
+  border: 1px solid white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: 1px solid #8d33e9;
+}
+
+::selection {
+  color: #f3f1ad;
+  background-color: #f3f1ad55;
+
+  background: transparent;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.btn:hover {
+  filter: drop-shadow(0px 0px 2.5px rgba(255, 255, 255, 0.75));
+}
+
+a.nav:hover {
+  -webkit-animation: huecycle 1s linear infinite;
+  animation: huecycle 1s linear infinite;
+}
+
+img.questionable:hover {
+  cursor: url("https://www.personalwaifu.io/assets/cursor/help.gif"), auto;
+}
+
+td,
+th {
+  background-image: url("");
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  position: relative;
+}
+
+hr.solid {
+  border-top: 1px solid #fff;
+  background-color: #fff;
+}
+
+tr td {
+  padding: initial;
+}
+
+div.update {
+  line-height: 18px;
+}
+
+.iframe:hover {
+  height: 333px;
+  -webkit-transition: 0.3s cubic-bezier(0, 0, 0.02, 1);
+  transition: 0.3s cubic-bezier(0, 0, 0.02, 1);
+  border: 2px solid #6bd3bd;
+  z-index: 100;
+  float: inherit;
+  box-shadow: 0px 0px 20px 5px #000000;
+}
+
+.navbar {
+  height: 100%;
+  background-color: #1b1b1b;
+  border: 1px #5465ff;
+  border-style: solid;
+}
+
+.directs {
+  border: 0.1px solid white;
+  -webkit-filter: saturate(0%);
+  filter: saturate(0%);
+  -webkit-transition: 5s;
+  overflow: hidden;
+  height: 74px;
+  margin-bottom: 10px;
+}
+
+.mini {
+  width: 95px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.musiclist {
+  background: transparent;
+
+  border-radius: 25px;
+
+  text-align: center;
+  list-style-type: none;
+}
+.musiclist li {
+  transition: 0.3s;
+  padding: 5px 3px 0px;
+  border-radius: 5px;
+  border: 2px dashed #fff;
+  border-style: outset;
+}
+
+.directs:hover {
+  -webkit-animation: colorize 0.1s linear;
+  animation: colorize 0.1s linear;
+  -webkit-filter: saturate(100%);
+  filter: saturate(100%);
+}
+
+.spacebg,
+.spacebg2 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -11;
+  background: url("https://www.personalwaifu.io/assets/space_bg.gif");
+  background-blend-mode: screen;
+  mix-blend-mode: screen;
+  opacity: 0.5;
+}
+
+.spacebg2 {
+  background-image: url("https://www.personalwaifu.io/assets/space_bg2.gif");
+  z-index: -12;
+}
+
+.ebheader {
+  margin: 0px 20.8px -1px;
+  padding-top: 5px;
+  color: #290829;
+  background-color: #6bd3bd;
+  position: relative;
+  text-align: center;
+  border: 2px solid #ffffff;
+}
+
+.ttemp {
+  position: relative;
+  border: 8px solid white;
+  box-shadow: 0px 0px 10px 1px black;
+  background-color: #290829;
+}
+.tdtemp {
+  background-image: url("");
+  padding: 10px;
+  text-align: center;
+  border: 7px solid #393052;
+  outline: 8px solid #6bd3bd;
+}
+
+.logo {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  justify-content: center;
+  width: 64%;
+  pointer-events: none;
+  max-width: 1200px;
+  filter: drop-shadow(0 0 0.5rem #7280ce);
+  top: 0px;
+  /*animation: logoIn 2s cubic-bezier(0.25, 0.1, 0, 1);*/
+}
+
+.earthbtble,
+#thestatus {
+  font-family: "apple";
+  text-align: left;
+  border-width: 10px;
+  border-style: solid;
+  padding: 10px;
+  padding-bottom: 2px;
+  border-image: url(../assets/EBtble.png) 27 stretch;
+  border-image-width: 12px;
+  background-color: #290829;
+  border-image-outset: 0.3;
+  color: white;
+  margin: 0px;
+  height: 90%;
+}
+
+.clocktble {
+  font-family: "apple";
+  text-align: center;
+  border-style: solid;
+  width: min-content;
+  height: min-content;
+  padding: 7px;
+  margin: 0 auto;
+  border-image: url(https://www.personalwaifu.io/main/assets/EBtbleCl.gif) 24 stretch;
+  border-image-width: 18px;
+  border-width: 10px;
+  border-image-outset: 0.6;
+  line-height: 7px;
+  color: #000;
+  background-color: #fff;
+}
+
+.earthbtbleMarker {
+  min-width: 0;
+  width: 100%;
+}
+.earthbtbleMarker div {
+  background-image: url(../assets/okD.gif);
+  width: 18px;
+  height: 12px;
+  position: absolute;
+  pointer-events: none;
+  transform: translate(0px, -9px);
+}
+
+.iframe {
+  height: 26px;
+  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.02, 1);
+  transition: 0.2s cubic-bezier(0, 0, 0.02, 1);
+  border: 2px solid white;
+  text-align: center;
+  z-index: 100;
+  box-shadow: 0px 0px 0px 0px #000000;
+}
+
+.button {
+  text-align: center;
+}
+
+.timeImg {
+  width: 100px;
+  image-rendering: pixelated;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  display: none;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.dothebarrellroll {
+  transform: rotateZ(360deg);
+  transition: transform 3s ease-in-out;
+}
+
+.btton:hover {
+  cursor: pointer;
+}
+
+.btton:active {
+  transform: scale(0.9);
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  animation: popup 1s;
+}
+
+.popcard {
+  background-color: white;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid #6bd3bd;
+  box-shadow: 0 2px 15px 0 black;
+
+  animation: popup 1s;
+}
+
+.caution {
+  filter: opacity(75%);
+  transform: rotate(16deg) translate(-34px, -54px);
+  image-rendering: pixelated;
+  /* filter: drop-shadow(0px 0px 3px black); */
+  z-index: inherit;
+}
+
+.dialogue {
+  width: 100%;
+  transform: translate(50%, 50%);
+  transform: rotate(345deg);
+  position: fixed;
+  /* border: 3px solid #73ad21; */
+  display: none;
+  left: 75%;
+  bottom: 1%;
+  z-index: 100;
+  animation: showUp 2s ease;
+  filter: invert(1);
+}
+.peeks {
+  position: absolute;
+  z-index: -1;
+  height: 125px;
+  pointer-events: none;
+}
+
+.overlay {
+}
+
+.main-nav {
+  grid-column: col-start 3 / span 6;
+  grid-row: 1 / 2;
+}
+
+.main-nav2 {
+  grid-column: col-start 2 / span 6;
+  grid-row: 2 / 3;
+}
+
+.main-nav3 {
+  grid-column: col-start 3 / span 6;
+  grid-row: 2/4;
+}
+
+.main-nav4 {
+  grid-column: col-start 3 / span 6;
+  grid-row: 4;
+}
+
+.content {
+  grid-column: col-start 4 / span 8;
+  grid-row: 2 / 6;
+}
+
+.side,
+.side2,
+.side3,
+.side4,
+.side5,
+.side6,
+.side7 {
+  width: 242px;
+}
+
+.check {
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -moz-animation: blink normal 1.5s infinite ease-in-out;
+  /* Firefox */
+  -webkit-animation: blink normal 1.5s infinite ease-in-out;
+  /* Webkit */
+  -ms-animation: blink normal 1.5s infinite ease-in-out;
+  /* IE */
+  animation: blink normal 1.5s infinite ease-in-out;
+  /* Opera */
+}
+
+.outer {
+}
+
+.outer {
+  grid-column: col-start 1 / span 1;
+  grid-row: 1;
+}
+.outer2 {
+  grid-column: col-start 10 / span 1;
+  grid-row: 1;
+}
+
+.side {
+  grid-column: col-start 2 / span 1;
+  grid-row: 1;
+}
+.side2 {
+  grid-column: col-start 9 / span 1;
+  grid-row: 1;
+}
+.side3 {
+  grid-column: col-start 2 / span 1;
+  grid-row: 2;
+}
+.side4 {
+  grid-column: col-start 9 / span 1;
+  grid-row: 2;
+}
+.side5 {
+  grid-column: col-start 2 / span 1;
+  grid-row: 3;
+}
+.side6 {
+  grid-column: col-start 9 / span 1;
+  grid-row: 3;
+}
+.side7 {
+  display: grid;
+  grid-column: col-start 9 / span 1;
+  grid-row: 4;
+  align-content: center;
+}
+
+.navbutton {
+  position: fixed;
+  image-rendering: pixelated;
+  display: none;
+  z-index: 9;
+}
+
+.mobilenavigate {
+  display: none;
+  position: fixed;
+
+  height: 100%;
+  width: 155px;
+
+  transform: translateX(0px);
+
+  z-index: 10;
+  overflow: auto;
+  animation: ease-in-out mobilenav 0.25s;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+.fadeoverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+.snow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+}
+
+#nowplaying {
+  text-align: center;
+}
+
+#pee {
+  animation: none;
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  line-height: normal;
+  font-size: 55px;
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
+#peeHolder {
+  opacity: 0;
+  z-index: 5;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#00d4ff",GradientType=1);
+}
+
+#faries {
+  display: none;
+  z-index: 100;
+}
+
+#furryring table {
+  margin: 0 auto;
+}
+
+#reference {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#reference2 {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#planet {
+  position: fixed;
+  z-index: -13;
+  image-rendering: pixelated;
+  width: 66px;
+  right: 266px;
+  top: 61px;
+  opacity: 0.2;
+  filter: drop-shadow(0px 0px 10px #e7a552);
+  display: none;
+}
+
+#robloxIcon {
+  display: none;
+  position: absolute;
+  image-rendering: pixelated;
+  left: 72px;
+  top: -40px;
+  transform: scale(0.7) rotate(270deg);
+  animation: robloxIn 0.5s ease-in-out;
+  transition: 0.75s;
+}
+
+#confetti {
+  position: fixed;
+  pointer-events: none;
+  display: none;
+}
+
+#tablecontainer {
+  padding: 10%;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#thestatus {
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+  font-size: 21px;
+  transform: rotate(0deg) translate(233px, -3px);
+  image-rendering: pixelated;
+  font-family: "apple";
+  padding: 5px;
+  border-image: url(../assets/EBtble.png) 35 stretch;
+  border-image-outset: 0.2;
+  width: 250px;
+  display: none;
+}
+#thelogo {
+}
+
+#wii {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+  z-index: 999;
+  pointer-events: none;
+  display: none;
+}
+
+#kisser {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  width: 35%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  animation: popup2 2.5s reverse;
+}
+
+#furryring a {
+  text-decoration: none;
+  color: black;
+}
+
+#shinto {
+  width: 250px;
+  /* image-rendering: pixelated; */
+  padding: 0px 0px 30px 30px;
+  transition: 0.5s;
+  cursor: pointer;
+  float: right;
+}
+#shinto:hover {
+  transform: scale(1.05);
+}
+
+#wholeshinto {
+  animation: float 3s cubic-bezier(0.25, 0, 0.75, 1) alternate infinite;
+}
+
+#furryring .webring-links {
+  font-size: 11px;
+  text-decoration: none;
+}
+
+#statuscafe {
+}
+#statuscafe-username {
+  display: none;
+}
+#statuscafe-content {
+}
+
+#musicplayer {
+  background: transparent;
+  width: 150px;
+  height: 32px;
+  padding: 15px;
+  transform: scale(1.1);
+  z-index: 10050;
+  transition-timing-function: ease-out;
+  transition: 0.25s;
+}
+
+#sillywebring {
+  width: 170px;
+  height: 59px;
+  padding: 0;
+}
+#transring tr {
+  display: grid;
+  grid-template-columns: repeat(2, [col-start] 2fr);
+}
+
+#deltarune {
+  width: 195px;
+}
+
+#navwrapper {
+  margin: 0 auto;
+  width: 152px;
+}
+
+#babies {
+  image-rendering: pixelated;
+  width: 100px;
+  transform: rotate(36deg) scale(1);
+  margin: 15px;
+}
+
+#newyear {
+  display: none;
+}
+#buttonSide {
+  width: 200px;
+  margin: 0 auto;
+  height: 200px;
+  overflow: auto;
+}
+
+#thefile {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+#canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#audio {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  width: calc(100% - 20px);
+}
+
+#back {
+  background-color: #290829;
+  width: 100%;
+  height: 915px;
+  position: fixed;
+  filter: opacity(0.75);
+  z-index: -1;
+}
+
+#darken {
+  background-color: hsla(0, 0%, 0%, 0.55);
+
+  z-index: 8;
+}
+#copytext {
+  width: 200px;
+}
+#fade {
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+
+  opacity: 0;
+}
+
+#singularity {
+  font-family: geo;
+  display: block;
+}
+#mobilesingularity {
+  font-family: geo;
+  display: none;
+}
+
+#featuredImg {
+  width: 270px;
+  rotate: -5deg;
+  cursor: pointer;
+  animation: wiggie 1s infinite steps(2, start) alternate;
+  transition: 0.5s;
+  padding-bottom: 10px;
+}
+
+#featuredImg:hover {
+}
+
+#thefog {
+  image-rendering: pixelated;
+  display: none;
+}
+
+@keyframes mainIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes logoIn {
+  from {
+    top: -600px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes robloxIn {
+  from {
+    left: 175px;
+  }
+  to {
+    left: 72px;
+  }
+}
+
+@keyframes wiggie {
+  0% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+@-webkit-keyframes puffIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes puffIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes dobarrellroll {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes huecycle {
+  from {
+    -webkit-filter: hue-rotate(0deg) saturate(200%);
+    filter: hue-rotate(0deg) saturate(200%);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg) saturate(200%);
+    filter: hue-rotate(360deg) saturate(200%);
+  }
+}
+@keyframes huecycle {
+  from {
+    -webkit-filter: hue-rotate(0deg) saturate(200%);
+    filter: hue-rotate(0deg) saturate(200%);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg) saturate(200%);
+    filter: hue-rotate(360deg) saturate(200%);
+  }
+}
+
+@-webkit-keyframes colorize {
+  from {
+    -webkit-filter: saturate(0%);
+    filter: saturate(0%);
+  }
+  to {
+    -webkit-filter: saturate(100%);
+    filter: saturate(100%);
+  }
+}
+@keyframes colorize {
+  from {
+    -webkit-filter: saturate(0%);
+    filter: saturate(0%);
+  }
+  to {
+    -webkit-filter: saturate(100%);
+    filter: saturate(100%);
+  }
+}
+
+@keyframes scroller {
+  from {
+    transform: rotate(45deg) translateX(0px);
+  }
+  to {
+    transform: rotate(45deg) translateX(-84px);
+  }
+}
+
+@keyframes backgroundScroll {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: 0px -468px;
+  }
+}
+
+@keyframes backgroundScroll2 {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: 0px -468px;
+  }
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes popup2 {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.75);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+}
+
+@keyframes sizeIn {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes showUp {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 1%;
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  body {
+    font-size: 22px;
+  }
+
+  header,
+  footer,
+  .main {
+    max-width: 910px;
+  }
+
+  .side,
+  .side2,
+  .side3,
+  .side4,
+  .side5,
+  .side6,
+  .side7 {
+    width: 192px;
+  }
+
+  .directs {
+    height: 55px;
+  }
+  .mini {
+    width: 71px;
+  }
+
+  .wrapper,
+  .wrapper2 {
+    max-width: 910px;
+  }
+  .webring {
+    width: 125px;
+  }
+  #sillywebring {
+    width: 145px;
+  }
+
+  .webring-info img {
+    width: 140px;
+  }
+
+  .webring-prev img,
+  .webring-next img {
+    width: 25px;
+  }
+
+  #buttonimg {
+    width: 150px;
+  }
+  #smolbuttonimg {
+    width: 71px;
+  }
+  #albumcover {
+    width: 150px;
+    height: 150px;
+  }
+  #copytext {
+    width: 150px;
+  }
+  #robloxIcon {
+    transform: scale(0.5) rotate(270deg);
+    left: 38px;
+  }
+  #deltarune {
+    width: 150px;
+  }
+
+  #shinto {
+    width: 228px;
+    float: none;
+    padding: 0px 0px 30px 0px;
+  }
+  #wholeshinto {
+    text-align: center;
+  }
+
+  #featuredImg {
+    width: 200px;
+  }
+
+  #buttonSide {
+    width: 100px;
+  }
+  #thestatus {
+    transform: rotate(0deg) translate(110px, -30px);
+  }
+
+  @keyframes robloxIn {
+    from {
+      left: 175px;
+    }
+    to {
+      left: 38px;
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  .whole {
+  }
+}
+
+@media (orientation: portrait) and (max-width: 1023px) /* Sincerest apologies to mobile users,
+  but this must be done. */ {
+  body {
+    line-height: 1.2;
+  }
+
+  header {
+    padding-top: 15%;
+  }
+  header,
+  footer,
+  .main {
+    padding: 10px 15% 25px;
+  }
+
+  article,
+  aside,
+  header {
+    padding-bottom: 30px;
+  }
+  marquee,
+  .side,
+  .side2,
+  #emote {
+    display: none;
+  }
+
+  .side,
+  .side2,
+  .side3,
+  .side4,
+  .side5,
+  .side6,
+  .side7 {
+    margin: 0px auto;
+  }
+
+  .logo {
+    width: 100%;
+  }
+  .navbutton {
+    display: block;
+  }
+  .wrapper,
+  .wrapper2 {
+    display: block;
+    padding: 10px 15% 25px;
+    max-width: 950px;
+  }
+  .webring {
+    width: 125px;
+  }
+  .earthbtbleMarker {
+    display: none;
+  }
+  .directs {
+    width: 150px;
+    filter: saturate(100%);
+  }
+
+  #singularity {
+    display: none;
+  }
+  #mobilesingularity {
+    display: block;
+  }
+
+  #type,
+  #type2 {
+    text-align: center;
+  }
+
+  #shinto {
+    padding: 0px 5px 5px 5px;
+    transform: scale(0.9);
+    width: 235px;
+  }
+  #hallo {
+    background-color: #ff9a00;
+  }
+  #planet {
+    width: 32px;
+    right: 38px;
+    top: 21px;
+    opacity: 0.3;
+    display: none;
+  }
+  #wholeshinto {
+    pointer-events: none;
+  }
+  #deltarune {
+    width: 150px;
+  }
+  #featuredImg {
+    width: 200px;
+  }
+
+  #neighbors {
+    display: block;
+  }
+
+  #songname {
+  }
+}
+
+#albumcover {
+  border: 0.1px solid white;
+}
+#songname {
+  color: #6bd3bd;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #6bd3bd60;
+  }
+  50% {
+    background-color: #6bd3bd20;
+  }
+  100% {
+    background-color: #6bd3bd60;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    background-color: #6bd3bd60;
+  }
+  50% {
+    background-color: #6bd3bd20;
+  }
+  100% {
+    background-color: #6bd3bd60;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    color: #ec5f5f;
+    filter: drop-shadow(0px 0px 2.5px #ec5f5f);
+  }
+  25% {
+    color: #71e2e8;
+    filter: drop-shadow(0px 0px 2.5px #71e2e8);
+  }
+  50% {
+    color: #847ee6;
+    filter: drop-shadow(0px 0px 2.5px #847ee6);
+  }
+  75% {
+    color: #e26aed;
+    filter: drop-shadow(0px 0px 2.5px #e26aed);
+  }
+  100% {
+    color: #ec5f5f;
+    filter: drop-shadow(0px 0px 2.5px #ec5f5f);
+  }
+}
+
+@keyframes mobilenav {
+  from {
+    transform: translateX(-250px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes rainbowBorder {
+  0% {
+    border-color: #fe00b1;
+  }
+  25% {
+    border-color: #ffe600;
+  }
+  50% {
+    border-color: #38ff00;
+  }
+  75% {
+    border-color: #00c3ff;
+  }
+  100% {
+    border-color: #9900ff;
+  }
+}

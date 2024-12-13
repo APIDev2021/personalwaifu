@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERROR</title>
+    <!-- lol what did i do -->
+
+    <script>
+      function main() {
+        const pages = [
+          "not_found",
+          "puro",
+          "klonoa",
+          "ebdebug",
+          "tails",
+          "roblos",
+          "hmcastle",
+          "keldeo",
+          "catbreak",
+          "pbj",
+          "stars",
+          "fnaf",
+          "bluey",
+          "goober",
+        ];
+        setTimeout(
+          () =>
+            (window.location.href =
+              "/404/" + pages[Math.floor(Math.random() * pages.length)]),
+          500
+        );
+      }
+    </script>
+
+    <style>
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        background-image: url("assets/no-signal.jpg");
+        background-repeat: repeat;
+        box-shadow: 0 0 50px #ffffff inset;
+      }
+      video::-webkit-media-controls {
+        display: none !important;
+      }
+
+      *::-webkit-media-controls-start-playback-button {
+        display: none !important;
+        -webkit-appearance: none;
+      }
+
+      .fullscreen-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+      }
+
+      .fullscreen-bg__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (min-aspect-ratio: 16/9) {
+        .fullscreen-bg__video {
+          height: 500%;
+          top: -200%;
+        }
+      }
+
+      @media (max-aspect-ratio: 16/9) {
+        .fullscreen-bg__video {
+          width: 500%;
+          left: -200%;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .fullscreen-bg {
+        }
+        .fullscreen-bg__video {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body onload="main()">
+    <div class="fullscreen-bg">
+      <video
+        loop
+        autoplay
+        muted
+        preload="auto"
+        playsinline
+        class="fullscreen-bg__video"
+      >
+        <source src="404/assets/tv.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </body>
+</html>

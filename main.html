@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link
+      id="defcss-link"
+      href="https://www.personalwaifu.io/themes/default.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      id="css-link"
+      href="https://www.personalwaifu.io/themes/default.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="https://www.personalwaifu.io/themes/bucket-ring.css" />
+
+    <!-- Change the bookmark icon here. -->
+    <link rel="icon" href="https://www.personalwaifu.io/assets/favicon.gif" type="image/gif" />
+    <title>𝚆 𝚎 𝚕 𝚌 𝚘 𝚖 𝚎 !</title>
+
+    <!-- Discord/Twitter open graph metadata. -->
+    <meta property="og:url" content="https://theabsoluterealm.com/" />
+    <meta property="og:type" content="article" />
+    <meta name="theme-color" content="#6bd3bd" />
+    <meta name="photo" content="#6bd3bd" />
+    <meta property="og:title" content="m a i n" />
+    <meta property="og:site_name" content="The absolute realm" />
+    <meta
+      property="og:image"
+      content="https://theabsoluterealm.com/main/assets/logooo.gif"
+    />
+    <meta
+      property="og:description"
+      content="The place of cool and fun things varying around gaming, secrets, art, programming, and more!"
+    />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- (2/15/22)
+      ⣞⢽⢪⢣⢣⢣⢫⡺⡵⣝⡮⣗⢷⢽⢽⢽⣮⡷⡽⣜⣜⢮⢺⣜⢷⢽⢝⡽⣝
+      ⠸⡸⠜⠕⠕⠁⢁⢇⢏⢽⢺⣪⡳⡝⣎⣏⢯⢞⡿⣟⣷⣳⢯⡷⣽⢽⢯⣳⣫⠇
+      ⠀⠀⢀⢀⢄⢬⢪⡪⡎⣆⡈⠚⠜⠕⠇⠗⠝⢕⢯⢫⣞⣯⣿⣻⡽⣏⢗⣗⠏⠀
+      ⠀⠪⡪⡪⣪⢪⢺⢸⢢⢓⢆⢤⢀⠀⠀⠀⠀⠈⢊⢞⡾⣿⡯⣏⢮⠷⠁⠀⠀
+      ⠀⠀⠀⠈⠊⠆⡃⠕⢕⢇⢇⢇⢇⢇⢏⢎⢎⢆⢄⠀⢑⣽⣿⢝⠲⠉⠀⠀⠀⠀
+      ⠀⠀⠀⠀⠀⡿⠂⠠⠀⡇⢇⠕⢈⣀⠀⠁⠡⠣⡣⡫⣂⣿⠯⢪⠰⠂⠀⠀⠀⠀
+      ⠀⠀⠀⠀⡦⡙⡂⢀⢤⢣⠣⡈⣾⡃⠠⠄⠀⡄⢱⣌⣶⢏⢊⠂⠀⠀⠀⠀⠀⠀
+      ⠀⠀⠀⠀⢝⡲⣜⡮⡏⢎⢌⢂⠙⠢⠐⢀⢘⢵⣽⣿⡿⠁⠁⠀⠀⠀⠀⠀⠀⠀
+      ⠀⠀⠀⠀⠨⣺⡺⡕⡕⡱⡑⡆⡕⡅⡕⡜⡼⢽⡻⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+      ⠀⠀⠀⠀⣼⣳⣫⣾⣵⣗⡵⡱⡡⢣⢑⢕⢜⢕⡝⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+      ⠀⠀⠀⣴⣿⣾⣿⣿⣿⡿⡽⡑⢌⠪⡢⡣⣣⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+      ⠀⠀⠀⡟⡾⣿⢿⢿⢵⣽⣾⣼⣘⢸⢸⣞⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+      ⠀⠀⠀⠀⠁⠇⠡⠩⡫⢿⣝⡻⡮⣒⢽⠋
+      "Put this in the source code, now"  ~ Joe Papa
+      -->
+
+    <!-- (2/28/22) 
+      "Tomaki here, envading a furry's personal space. It's quite cozy here" ~ Tomaki 
+      -->
+  </head>
+
+  <body>
+    <div id="fade" class="fadeoverlay"></div>
+    <!-- space space space space space space space space space space space space space space space -->
+
+    <div style="position: fixed; font-size: 15px; top: 5px; right: 10px">
+      <p id="fpsCounter"></p>
+    </div>
+
+    <div id="peeHolder">
+      <p id="pee"></p>
+    </div>
+
+    <div>
+      <div
+        class="spacebg"
+        style="animation: backgroundScroll 15s linear reverse infinite"
+      ></div>
+      <div
+        class="spacebg2"
+        style="animation: backgroundScroll2 25s linear reverse infinite"
+      ></div>
+    </div>
+
+    <div id="reference">
+      <img src="https://www.personalwaifu.io/assets/maxwell.gif" alt="maxwell the cat" />
+    </div>
+    <div id="reference2">
+      <video src="main.html"></video>
+    </div>
+
+    <div
+      style="background-image: url('https://www.personalwaifu.io/assets/EarthboundMapWinters.png')"
+      id="winterBk"
+    ></div>
+
+    <canvas class="snow" id="snowCanvas"></canvas>
+    <canvas class="snow" id="snowCanvas2"></canvas>
+    <canvas id="confetti"></canvas>
+
+    <img
+      id="planet"
+      src="https://www.personalwaifu.io/assets/pumpkin-moon.png"
+      alt="pumpkin moon from terraria"
+    />
+
+    <div id="wii"></div>
+
+    <div id="darken" class="overlay no-select"></div>
+    <div class="navbutton">
+      <img
+        src="https://www.personalwaifu.io/assets/navbutton.gif"
+        style="width: 45px"
+        alt="navigator button for mobile"
+      />
+    </div>
+
+    <!-- THIS IS FOR THE MOBILE VERSION!!! -->
+    <div class="mobilenavigate">
+      <div
+        style="
+          width: 175px;
+          height: 165%;
+          background-color: #6bd3bd36;
+          position: fixed;
+          background-attachment: fixed;
+          z-index: -2;
+        "
+      ></div>
+      <div id="navwrapper">
+        <h1>Navigate</h1>
+
+        <a href="https://www.personalwaifu.io/CoolStuff/">
+          <div class="directs" id="bC">
+            <img
+              id="buttonimg"
+              alt="A pixel art button of a wrench, gear, and mouse icon that leads to the resources page"
+              src="https://www.personalwaifu.io/assets/links.png"
+              onmouseover="Tip(event, 'The place that\'ll most likely lead to a lot of things that are cool and special')"
+              onmouseout="UnTip()"
+            />
+          </div>
+        </a>
+
+        <a href="https://www.personalwaifu.io/resourcesNtools/">
+          <div class="directs" id="bC">
+            <img
+              id="buttonimg"
+              alt="A pixel art button of a wrench, gear, and mouse icon that leads to the resources page"
+              src="https://www.personalwaifu.io/assets/resources.png"
+              onmouseover="Tip(event, 'Rad tools I found from my experience of browsing the internet that you may find quite interesting..')"
+              onmouseout="UnTip()"
+            />
+          </div>
+        </a>
+
+        <a href="http://theabsoluterealm.123Guestbook.com/">
+          <div class="directs" id="bC">
+            <img
+              id="buttonimg"
+              alt="A pixel art button of a guestbook that leads to the guestbook page"
+              src="https://www.personalwaifu.io/assets/guestbook.png"
+              onmouseover="Tip(event, 'The guestbook! <font style=\'animation: color-change infinite linear 2s;\'>You should totally sign it ;3</font>')"
+              onmouseout="UnTip()"
+            />
+          </div>
+        </a>
+
+        <div class="directs" id="bC">
+          <img
+            id="buttonimg"
+            alt="A pixel art button of a wrench, gear, and mouse icon that leads to the characters page"
+            src="https://www.personalwaifu.io/assets/characters.png"
+            onmouseover="Tip(event, 'All the rascals that run the place')"
+            onmouseout="UnTip()"
+          />
+          <div class="caution">
+            <img
+              alt="Caution Stripes"
+              src="https://www.personalwaifu.io/assets/cautionStrip.gif"
+              width="400px"
+            />
+          </div>
+        </div>
+        <a href="https://www.personalwaifu.io/sitemap.html">
+          <div class="directs" id="bC">
+            <img
+              id="buttonimg"
+              alt="A pixel art button of a map icon that leads to the sitemap"
+              src="https://www.personalwaifu.io/assets/sitemap.png"
+              onmouseover="Tip(event, 'This is <del>everywhere</del> you can visit on this server!')"
+              onmouseout="UnTip()"
+            />
+          </div>
+        </a>
+        <h1>Socials</h1>
+        <div class="directs" id="bC">
+          <a href="https://neocities.org/site/theabsoluterealm" target="_blank"
+            ><img
+              id="buttonimg"
+              onmouseover="Tip(event, 'My neocities page! Basically where this site is hosted from! Also, consider following this page if you\'re also a fellow enjoyer <3')"
+              onmouseout="UnTip()"
+              alt="A pixel art button of the steam logo that leads to my neocities page."
+              src="https://www.personalwaifu.io/assets/neocities.png"
+          /></a>
+        </div>
+
+        <div class="directs" id="bC">
+          <a href="https://steamcommunity.com/id/sshintoo/" target="_blank"
+            ><img
+              id="buttonimg"
+              onmouseover="Tip(event, 'Where all the gaming comes from.')"
+              onmouseout="UnTip()"
+              alt="A pixel art button of the steam logo that leads to my steam page."
+              src="https://www.personalwaifu.io/assets/steam.png"
+          /></a>
+        </div>
+
+        <div class="directs" id="bC">
+          <a
+            href="https://www.roblox.com/users/28018068/profile"
+            target="_blank"
+            ><img
+              id="buttonimg"
+              alt="A pixel art button of the roblox that leads to my roblox account."
+              src="https://www.personalwaifu.io/assets/roblox.png"
+              onmouseover="Tip(event, 'da roblos')"
+              onmouseout="UnTip()"
+          /></a>
+        </div>
+
+        <div class="directs" id="bC">
+          <a href="https://twitter.com/FiroShinto" target="_blank"
+            ><img
+              id="buttonimg"
+              alt="A pixel art button of the twitter bird icon that leads to my twitter page."
+              src="https://www.personalwaifu.io/assets/twitter.png"
+              onmouseover="Tip(event, 'My twitter page.')"
+              onmouseout="UnTip()"
+          /></a>
+        </div>
+
+        <div class="directs" id="bC">
+          <a href="discord://-/users/194570637077905409" target="_blank"
+            ><img
+              id="buttonimg"
+              alt="A pixel art button of the discord icon that leads to my discord profile."
+              src="https://www.personalwaifu.io/assets/discord.png"
+              onmouseover="Tip(event, 'If you\'d like to reach out to me, my best form of contact is my <font color=\'#5865f2\'>discord!</font> It\'s <font color=\'#6aeeff\'>superscrouge</font>. Please be patient with me, i get kinda anxious and shy!')"
+              onmouseout="UnTip()"
+          /></a>
+        </div>
+
+        <div class="directs" id="bC">
+          <a
+            href="https://open.spotify.com/user/superscrouge11?si=c4d1ce9216d942a9"
+          >
+            <img
+              id="buttonimg"
+              alt="A pixel art button of the spotify logo that will lead to my spotify profile"
+              src="https://www.personalwaifu.io/assets/spotify.png"
+              onmouseover="Tip(event, 'My spotify profile! For now it\'s just going to be my playlist stuff until I do my music stuff again :3')"
+              onmouseout="UnTip()"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Secret Fairy Code -->
+    <div class="popup">
+      <div class="popcard">
+        <img
+          id="modalimg"
+          style="animation: sizeIn 1s ease"
+          src="https://www.personalwaifu.io/assets/secretfairycode.png"
+          alt="TUNIC Game character pointing at the 'Secret Fairy Code/Puzzle'."
+        />
+      </div>
+    </div>
+
+    <div class="whole">
+      <header>
+        <div
+          style="
+            position: relative;
+            animation: logoIn 2s cubic-bezier(0.25, 0.1, 0, 1);
+          "
+        >
+          <!-- Main Logo -->
+
+          <img
+            src="https://www.personalwaifu.io/assets/origlogo.gif"
+            alt="The animated logo of the website called 'The absolute realm'"
+            class="logo"
+            id="thelogo"
+          />
+
+          <img
+            src="https://www.personalwaifu.io/assets/logo-stars.gif"
+            alt="The animated logo of the website called 'The absolute realm'"
+            class="logo"
+            id="activateTitle"
+            style="transform: translate(-100%); position: absolute"
+          />
+          <img
+            src="https://www.personalwaifu.io/assets/happynewyear.gif"
+            alt="happy new year!"
+            class="logo"
+            id="newyear"
+            style="
+              animation: huecycle 2s linear infinite;
+              transform: translate(37%, -5%);
+              position: absolute;
+            "
+          />
+
+          <div id="thefog">
+            <img
+              class="logo"
+              style="
+                opacity: 0.3;
+                transform: translate(-50%);
+                position: absolute;
+                animation: fogslide1 5s infinite alternate steps(25);
+              "
+              src="https://www.personalwaifu.io/assets/fog1.png"
+              alt="fog"
+            />
+            <img
+              class="logo"
+              style="
+                opacity: 0.2;
+                transform: translate(-50%);
+                position: absolute;
+                animation: fogslide1 10s infinite alternate-reverse steps(25);
+              "
+              src="https://www.personalwaifu.io/assets/fog2.png"
+              alt="fog"
+            />
+            <img
+              class="logo"
+              style="
+                opacity: 0.3;
+                transform: translate(-50%);
+                position: absolute;
+                animation: fogslide1 7s infinite alternate steps(25);
+              "
+              src="https://www.personalwaifu.io/assets/fog3.png"
+              alt="fog"
+            />
+          </div>
+        </div>
+        <!-- Time!! -->
+        <p id="theTime" style="animation: none">CLOCK LOADING...</p>
+
+        <!-- Random quotes/phrases Marquee -->
+
+        <marquee
+          onmouseover="this.stop();"
+          onmouseout="this.start();"
+          id="marq"
+          behavior="scroll"
+          direction="left"
+          >LOADING... LOADING... LOADING... LOADING... LOADING... LOADING...
+          LOADING... LOADING... LOADING... LOADING... LOADING... LOADING...
+          LOADING... LOADING...</marquee
+        >
+        <!-- What you are typing indicator -->
+        <noscript>
+          <style>
+            marquee,
+            .main-nav4,
+            .side3,
+            #theTime {
+              display: none;
+            }
+
+            #enbyBtn {
+              cursor: default;
+            }
+
+            #shinto {
+              cursor: default;
+            }
+            #shinto:hover {
+              transform: none;
+            }
+          </style>
+
+          <p style="animation: none">
+            so it appears you dont have javascript enabled, huh? you're missin'
+            out!!!
+          </p></noscript
+        >
+
+        <!-- Update iframe where all the updates go -->
+        <div class="update">
+          <iframe
+            title="The Major Update Bar!"
+            height="120"
+            src="https://www.personalwaifu.io/update.html"
+            style="width: 90%"
+            class="iframe"
+            id="activateIframe"
+          ></iframe>
+        </div>
+
+        <div class="ebheader" style="margin-top: 25px">
+          <a href="https://www.personalwaifu.io/not_found.html"
+            ><img
+              id="smolboi"
+              src="https://www.personalwaifu.io/assets/eb.gif"
+              alt="the tiny hiding creature"
+              style="
+                position: absolute;
+                z-index: -1;
+                transform: translate(165%, -40px);
+                width: 39px;
+              "
+          /></a>
+          ~ welcome, online user! ~
+        </div>
+        <div class="earthbtble">
+          <div id="ebtext">
+            ` heya! i make things on the computer for fun; however, i tend to
+            keep it all on my hard drive for strange reasons.. slowly but surely
+            things will appear on this website and ill probably never mention
+            when it's finished lol. Thanks for visiting though! :D
+          </div>
+          <br />
+          <div id="ebtext">
+            ` im interested into a lot of things, however, my main interests
+            focus on
+            <a
+              style="color: #6aeeff"
+              onmouseover="Tip(event, '<font color=\'#6aeeff\'> Taeknik.ai</font> is currently <font color=\'#feee8c\'>UNDERGOING DEVELOPMENT!!</font>')"
+              onmouseout="UnTip()"
+              href="https://www.personalwaifu.io/Taeknik"
+              class="nav"
+              title=""
+              >programming</a
+            >,
+            <a
+              style="color: #eac0ff"
+              href="https://www.personalwaifu.io/Xyn"
+              class="nav"
+              onmouseover="Tip(event, '<font color=\'#eac0ff\'> Xyn\'s Creative Corner!</font> is currently <font color=\'#feee8c\'>UNDER CONSTRUCTION!!</font>')"
+              onmouseout="UnTip()"
+              >2d</a
+            >/<a
+              style="color: #eac0ff"
+              href="https://www.personalwaifu.io/Xyn/creative-corner.html"
+              class="nav"
+              onmouseover="Tip(event, '<font color=\'#eac0ff\'> Xyn\'s Creative Corner!</font> is currently <font color=\'#feee8c\'>UNDER CONSTRUCTION!!</font>')"
+              onmouseout="UnTip()"
+              >3d art and illustration</a
+            >,
+            <a
+              style="color: #6bd3bd"
+              onmouseover="Tip(event, '<font color=\'#6bd3bd\'> EZROUE\'S SOUND ARCHIVE</font> is currently <font color=\'#feee8c\'>UNDER CONSTRUCTION!!</font>')"
+              onmouseout="UnTip()"
+              href="https://www.personalwaifu.io/Ezroue"
+              class="nav"
+              >music production</a
+            >/<a
+              style="color: #ff9a00"
+              onmouseover="Tip(event, '<font color=\'#ff9a00\'> EZROUE\'S SOUND ARCHIVE</font> is currently <font color=\'#feee8c\'>UNDER CONSTRUCTION!!</font>')"
+              onmouseout="UnTip()"
+              href="https://www.personalwaifu.io/Ezroue"
+              class="nav"
+              >sound engineering</a
+            >, and
+            <a
+              style="color: #ffde73"
+              onmouseover="Tip(event, '<font color=\'#ffde73\'> Bulbean Sunshine\'s Gallery</font> is currently <font color=\'#feee8c\'>UNDER CONSTRUCTION!!</font>')"
+              onmouseout="UnTip()"
+              href="https://shintowanders.com/"
+              class="nav"
+              >photography</a
+            >/<a
+              style="color: #ffde73"
+              onmouseover="Tip(event, '<font color=\'#ffde73\'> Bulbean Sunshine\'s Gallery</font> is currently <font color=\'#feee8c\'>UNDER CONSTRUCTION!!</font>')"
+              onmouseout="UnTip()"
+              href="https://shintowanders.com/"
+              class="nav"
+              >video production</a
+            >/<a
+              style="color: #ffde73"
+              onmouseover="Tip(event, '<font color=\'#ffde73\'> Bulbean Sunshine\'s Gallery</font> is currently <font color=\'#feee8c\'>UNDER CONSTRUCTION!!</font>')"
+              onmouseout="UnTip()"
+              href="https://shintowanders.com/"
+              class="nav"
+              >editing</a
+            >, which id love to use all of those things to be an
+            <a
+              style="color: #6aeeff"
+              onmouseover="Tip(event, '<font color=\'#6aeeff\'> shintowanders.com</font> is currently <font color=\'#feee8c\'>UNDER CONSTRUCTION!!</font>')"
+              onmouseout="UnTip()"
+              href="https://shintowanders.com/"
+              class="nav"
+            >
+              indie dev</a
+            >, or at least take care of all the things required to do it.
+          </div>
+          <br />
+          <div id="ebtext">
+            ` i want to make this page as fun and interactive as possible,
+            experiencing my diverse interests and bringing them to the table! So
+            expect sudden style changes, random occurrences, easter eggs, and
+            funky cool tricks!
+          </div>
+          <div class="earthbtbleMarker">
+            <div style="right: 17%; transform: translate(0px, 3px)"></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Here's the grid and everything else.. -->
+
+      <div class="wrapper">
+        <article class="main-nav">
+          <div class="ebheader"># so here's the gist here #</div>
+          <div class="earthbtble">
+            <div id="ebtext">
+              <div id="wholeshinto">
+                <img
+                  onclick="fetchStatusAndUpdate();"
+                  id="shinto"
+                  src="https://www.personalwaifu.io/assets/ohyeahtransparentbiggerw.png"
+                  alt="art(by @limereptileart) of an anthromorphic pup/fen floating up and down"
+                />
+
+                <div id="thestatus">
+                  <div id="statuscafe">
+                    <div id="statuscafe-username"></div>
+                    <span>` </span><span id="statuscafe-content"></span>
+                  </div>
+                </div>
+              </div>
+              ` Soo..
+              <em id="wobble" style="color: #6aeeff">How are yooouuu?</em> I
+              hope all is well. <strong>Behold</strong> the errr.. uhhh..
+              Upcoming happy place for such amazing things to me.
+              <font color="#6aeeff"></font>It gets a little chaotic here and
+              there but does it really matter? It's out of reach for anyone else
+              to linger around anyways. Don't take much mind to the void beneath
+              this little chat we're having.. I kinda do not have a space for
+              whatever is going to go there. <br /><br />
+
+              ` Apologies that there's not much here yet, it's gonna be a bit
+              since this is <em>REALLY</em> a first for me!<br />
+            </div>
+          </div>
+          <div class="earthbtbleMarker">
+            <div style="right: 30%" />
+          </div>
+        </article>
+
+        <!-- Actual navigation of the page itself! -->
+        <aside class="side">
+          <div class="ebheader"># navigate #</div>
+          <div class="earthbtble">
+            <img
+              class="peeks"
+              style="transform: translate(-92px, 355px); height: 105px"
+              src="https://www.personalwaifu.io/assets/shintopeek.png"
+              alt=""
+            />
+            <img
+              class="peeks"
+              style="transform: translate(-110px, 245px)"
+              src="https://www.personalwaifu.io/assets/xynpeek.png"
+              alt=""
+            />
+
+            <img
+              style="
+                position: absolute;
+                display: none;
+                pointer-events: none;
+                transform: rotate(345deg) translate(-54px, -72px);
+              "
+              src="https://www.personalwaifu.io/assets/PLACEHOLDER.png"
+              alt="PLACEHOLDER"
+            />
+
+            <div class="directs" id="bC">
+              <img
+                id="buttonimg"
+                alt="A pixel art button saying 'BUT WHO' with a question mark that leads to the about me page"
+                src="https://www.personalwaifu.io/assets/butwho.png"
+                onmouseover="Tip(event, 'So, who\'s the webmaster..? How come I didn\'t do this first..?! It\'ll be available one day lol.')"
+                onmouseout="UnTip()"
+              />
+              <div class="caution">
+                <img
+                  alt="Caution Stripes"
+                  src="https://www.personalwaifu.io/assets/cautionStrip.gif"
+                  width="400px"
+                />
+              </div>
+            </div>
+
+            <a id="coolStuff" href="https://www.personalwaifu.io/CoolStuff/">
+              <div class="directs" id="bC">
+                <img
+                  id="buttonimg"
+                  alt="A pixel art button of a wrench, gear, and mouse icon that leads to the resources page"
+                  src="https://www.personalwaifu.io/assets/links.png"
+                  onmouseover="Tip(event, 'The place that\'ll most likely lead to a lot of things that are cool and special')"
+                  onmouseout="UnTip()"
+                  onclick="linkTransition()"
+                />
+              </div>
+            </a>
+
+            <a id="resources" href="https://www.personalwaifu.io/resourcesNtools/">
+              <div class="directs" id="bC">
+                <img
+                  id="buttonimg"
+                  alt="A pixel art button of a wrench, gear, and mouse icon that leads to the resources page"
+                  src="https://www.personalwaifu.io/assets/resources.png"
+                  onmouseover="Tip(event, 'Rad tools I found from my experience of browsing the internet that you may find quite interesting..')"
+                  onmouseout="UnTip()"
+                  onclick="TVtransition()"
+                />
+              </div>
+            </a>
+
+            <a href="http://theabsoluterealm.123Guestbook.com/">
+              <div class="directs" id="bC">
+                <img
+                  id="buttonimg"
+                  alt="A pixel art button of a guestbook that leads to the guestbook page"
+                  src="https://www.personalwaifu.io/assets/guestbook.png"
+                  onmouseover="Tip(event, 'The guestbook! <font style=\'animation: color-change infinite linear 2s;\'>You should totally sign it ;3</font>')"
+                  onmouseout="UnTip()"
+                />
+              </div>
+            </a>
+
+            <div class="directs" id="bC">
+              <img
+                id="buttonimg"
+                alt="A pixel art button of my OC shinto that leads to the characters page"
+                src="https://www.personalwaifu.io/assets/characters.png"
+                onmouseover="Tip(event, 'All the the rascals that run the place')"
+                onmouseout="UnTip()"
+              />
+              <div class="caution">
+                <img
+                  alt="Caution Stripes"
+                  src="https://www.personalwaifu.io/assets/cautionStrip.gif"
+                  width="400px"
+                />
+              </div>
+            </div>
+
+            <a href="https://www.personalwaifu.io/sitemap.html">
+              <div class="directs" id="bC">
+                <img
+                  id="buttonimg"
+                  alt="A pixel art button of a map icon that leads to the sitemap"
+                  src="https://www.personalwaifu.io/assets/sitemap.png"
+                  onmouseover="Tip(event, 'This is <del>everywhere</del> you can visit on this server!')"
+                  onmouseout="UnTip()"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div class="earthbtbleMarker">
+            <div style="right: 76%" />
+          </div>
+        </aside>
+
+        <!-- Places to go like... Socials..? -->
+        <aside class="side2">
+          <div class="ebheader"># other locations #</div>
+          <div class="earthbtble">
+            <img
+              style="
+                position: absolute;
+                display: none;
+                pointer-events: none;
+                transform: rotate(15deg) translate(149px, -98px);
+              "
+              src="https://www.personalwaifu.io/assets/PLACEHOLDER.png"
+              alt="PLACEHOLDER"
+            />
+
+            <div class="directs" id="bC">
+              <a
+                href="https://neocities.org/site/theabsoluterealm"
+                target="_blank"
+                ><img
+                  id="buttonimg"
+                  onmouseover="Tip(event, 'My neocities page! Basically where this site is hosted from! <font style=\'animation: color-change infinite linear 2s;\'>Also, consider following this page if you\'re also a fellow enjoyer too <3 </font>')"
+                  onmouseout="UnTip()"
+                  alt="A pixel art button of the steam logo that leads to my neocities page."
+                  src="https://www.personalwaifu.io/assets/neocities.png"
+              /></a>
+            </div>
+            <div class="directs" id="bC">
+              <a href="https://steamcommunity.com/id/sshintoo/" target="_blank"
+                ><img
+                  id="buttonimg"
+                  onmouseover="Tip(event, 'Where all the gaming comes from.')"
+                  onmouseout="UnTip()"
+                  alt="A pixel art button of the steam logo that leads to my steam page."
+                  src="https://www.personalwaifu.io/assets/steam.png"
+              /></a>
+            </div>
+
+            <div class="directs" id="bC">
+              <a
+                onmouseover="document.getElementById('robloxIcon').style.display = 'block';"
+                onmouseleave="document.getElementById('robloxIcon').style.display = 'none';"
+                href="https://www.roblox.com/users/28018068/profile"
+                target="_blank"
+                ><img
+                  id="robloxIcon"
+                  src="https://tr.rbxcdn.com/0fe541dbc262cd3821cd8a77511dbcac/150/150/AvatarHeadshot/Png"
+                  alt="roblox icon" />
+                <img
+                  id="buttonimg"
+                  alt="A pixel art button of the roblox that leads to my roblox account."
+                  src="https://www.personalwaifu.io/assets/roblox.png"
+                  onmouseover="Tip(event, 'da roblos')"
+                  onmouseout="UnTip()"
+              /></a>
+            </div>
+
+            <div class="directs mini" style="" id="bC">
+              <a
+                href="https://bsky.app/profile/theabsoluterealm.com"
+                target="_blank"
+                ><img
+                  id="smolbuttonimg"
+                  alt="A pixel art button of the bluesky icon that leads to my bluesky page."
+                  src="https://www.personalwaifu.io/assets/bluesky.png"
+                  onmouseover="Tip(event, 'My bluesky page! It\'ll be a place where I post my obnoxious rambling at since I\'m not brave enough to use twitter')"
+                  onmouseout="UnTip()"
+              /></a>
+            </div>
+            <div class="directs mini" style="float: right" id="bC">
+              <a href="https://twitter.com/FiroShinto" target="_blank"
+                ><img
+                  id="smolbuttonimg"
+                  style="float: right"
+                  alt="A pixel art button of the twitter bird icon that leads to my twitter page."
+                  src="https://www.personalwaifu.io/assets/twitter2.png"
+                  onmouseover="Tip(event, 'My twitter page.')"
+                  onmouseout="UnTip()"
+              /></a>
+            </div>
+
+            <!--
+            <div class="directs" id="bC">
+              <a href="https://twitter.com/FiroShinto" target="_blank"
+                ><img
+                  id="buttonimg"
+                  alt="A pixel art button of the twitter bird icon that leads to my twitter page."
+                  src="assets/twitter.png"
+                  onmouseover="Tip(event, 'My twitter page.')"
+                  onmouseout="UnTip()"
+              /></a>
+            </div>
+            -->
+
+            <div class="directs" id="bC">
+              <a href="discord://-/users/194570637077905409" target="_blank"
+                ><img
+                  id="buttonimg"
+                  alt="A pixel art button of the discord icon that leads to my discord profile."
+                  src="https://www.personalwaifu.io/assets/discord.png"
+                  onmouseover="Tip(event, 'If you\'d like to reach out to me, my best form of contact is my <font color=\'#5865f2\'>discord!</font> It\'s <font color=\'#6aeeff\'>superscrouge</font>. Please be patient with me, i get kinda anxious and shy!')"
+                  onmouseout="UnTip()"
+              /></a>
+            </div>
+
+            <div class="directs" id="bC">
+              <a
+                href="https://open.spotify.com/user/superscrouge11?si=c4d1ce9216d942a9"
+              >
+                <img
+                  id="buttonimg"
+                  alt="A pixel art button of the spotify logo that will lead to my spotify profile"
+                  src="https://www.personalwaifu.io/assets/spotify.png"
+                  onmouseover="Tip(event, 'My spotify profile! For now it\'s just going to be my playlist stuff until I do my music stuff again :3')"
+                  onmouseout="UnTip()"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="earthbtbleMarker">
+            <div style="right: 10%" />
+          </div>
+        </aside>
+        <article class="main-nav4" style="align-self: self-end">
+          <div class="ebheader"># themes! #</div>
+          <div style="height: auto; text-align: center" class="earthbtble">
+            #
+            <a style="color: #6bd3bd" id="theme" onclick="setTheme('default')"
+              >Default</a
+            >
+            #
+            <a style="color: #6bd3bd" id="theme" onclick="setTheme('mint')"
+              >Mint</a
+            >
+            #
+            <a
+              style="color: #ff94ad"
+              id="theme"
+              onclick="setTheme('strawberry')"
+              >Strawberry</a
+            >
+            #
+            <a style="color: #efff5a" id="theme" onclick="setTheme('banana')"
+              >Banana</a
+            >
+            #
+            <a style="color: #ff9a00" id="theme" onclick="setTheme('peanut')"
+              >Peanut</a
+            >
+            #
+            <a style="color: #76d493" id="theme" onclick="setTheme('alien')"
+              >Alien</a
+            >
+            #
+            <a style="color: white" id="theme" onclick="setTheme('plain')"
+              >Plain Noir-ish</a
+            >
+            #
+          </div>
+          <div class="earthbtbleMarker">
+            <div style="right: 30%" />
+          </div>
+        </article>
+
+        <aside style="display: none" class="outer">
+          <img id="babies" src="https://www.personalwaifu.io/assets/sterr.png" alt="STAR PLACEHOLDER" />
+          <img id="babies" src="https://www.personalwaifu.io/assets/sterr.png" alt="STAR PLACEHOLDER" />
+        </aside>
+        <aside style="display: none" class="outer2">
+          <img id="babies" src="https://www.personalwaifu.io/assets/sterr.png" alt="STAR PLACEHOLDER" />
+          <img id="babies" src="https://www.personalwaifu.io/assets/sterr.png" alt="STAR PLACEHOLDER" />
+        </aside>
+
+        <!-- My personal favorite tunes that I enjoy listening too -->
+        <aside class="side3">
+          <div id="currentlylistening" class="ebheader">[ Now Playing [</div>
+
+          <div style="height: 80%" class="earthbtble">
+            <div id="nowplaying">
+              <div class="box">
+                <a href="main.html#" id="songlink" target="_blank">
+                  <div id="musicbox">
+                    <img
+                      src="https://www.personalwaifu.io/assets/defaultmusicicon.png"
+                      width="200"
+                      height="200"
+                      id="albumcover"
+                      alt="album icon"
+                    />
+                    <br />
+                    <span
+                      onmouseover="if (document.getElementById('songname').tagName === 'MARQUEE'){this.stop();};"
+                      onmouseout="if (document.getElementById('songname').tagName === 'MARQUEE'){this.start();};"
+                      scrollamount="3"
+                      id="songname"
+                      style="display: block"
+                      >LOADING..
+                    </span>
+
+                    <span id="artist">LOADING..</span>
+                  </div>
+                </a>
+                <span id="lastplayed" style="color: white"></span>
+              </div>
+            </div>
+
+            <img
+              src="https://www.personalwaifu.io/assets/shintogun.png"
+              id="emote"
+              style="
+                /* height: 50px; */
+                width: 63px;
+                position: absolute;
+                transform: rotate(11deg);
+                left: 25px;
+                bottom: 314px;
+                z-index: -1;
+                display: none;
+                image-rendering: pixelated;
+              "
+              alt="shinto emoji"
+            />
+          </div>
+          <div class="earthbtbleMarker">
+            <div style="right: 76%" />
+          </div>
+        </aside>
+
+        <!-- My buttons that you can add to your lil' collection~ -->
+        <aside class="side4">
+          <div class="ebheader"># add my button! #</div>
+          <div style="height: auto; text-align: center" class="earthbtble">
+            <div id="ebtext">Perhaps add me to your collection?</div>
+            <hr id="hoz" class="solid" />
+            <br />
+
+            <img
+              alt="the new absolute realm button"
+              class="questionable"
+              src="https://www.personalwaifu.io/buttons/absolute-realm.gif"
+              onclick="clearCache();"
+              onmouseover="Tip(event, 'This is my page\'s button! You can add/hotlink it to yours if you\'d like! <font style=\'animation: color-change infinite linear 2s;\'>Let me know if you add it to yours so I can add yours to mine <3</font>')"
+              onmouseout="UnTip()"
+            /><br />
+            <textarea
+              id="copyabs"
+              onclick="this.focus();this.select()"
+              spellcheck="true"
+            >
+              &lt;a href="https://theabsoluterealm.com/" target="_blank"&gt; &lt;img alt="the absolute realm" src="https://theabsoluterealm.com/buttons/absolute-realm.gif"&gt;&lt;/a&gt;
+            </textarea>
+            <img
+              alt="the old absolute realm button"
+              class="questionable"
+              src="https://www.personalwaifu.io/buttons/arbutton.gif"
+              onclick="clearCache();"
+              onmouseover="Tip(event, 'This is my page\'s button! You can add/hotlink it to yours if you\'d like! <font style=\'animation: color-change infinite linear 2s;\'>Let me know if you add it to yours so I can add yours to mine <3</font>')"
+              onmouseout="UnTip()"
+            />
+            <textarea
+              id="copyoldabs"
+              onclick="this.focus();this.select()"
+              spellcheck="true"
+            >
+              &lt;a href="https://theabsoluterealm.com/" target="_blank"&gt; &lt;img alt="the absolute realm" src="https://theabsoluterealm.com/buttons/arbutton.gif"&gt;&lt;/a&gt;
+            </textarea>
+          </div>
+          <div class="earthbtbleMarker">
+            <div style="right: 10%" />
+          </div>
+        </aside>
+
+        <aside class="side5">
+          <div class="ebheader"># rings & listings #</div>
+          <div
+            style="
+              height: 200px;
+              overflow: auto;
+              text-align: center;
+              font-family: oldApple;
+              font-size: 11px;
+            "
+            class="earthbtble"
+          >
+            <div
+              style="
+                color: black;
+                background: #d6fdec;
+                background-image: url(https://www.personalwaifu.io/assets/longpale.png);
+                background-size: cover;
+              "
+              class="webring"
+              id="furryring"
+            >
+              <script
+                type="text/javascript"
+                src="https://furryring.neocities.org/onionring-variables.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="https://furryring.neocities.org/onionring-widget.js"
+              ></script>
+            </div>
+
+            <div style="display: grid; justify-content: center" id="transring">
+              <script
+                type="text/javascript"
+                src="https://transring.neocities.org/onionring-variables.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="https://transring.neocities.org/nb-widget.js"
+              ></script>
+            </div>
+
+            <div style="background: #454545" class="webring">
+              <div id="bucket">
+                <span id="flag"> 🏳️‍🌈 </span
+                ><a id="header" href="https://webring.bucketfish.me"
+                  >bucket webring</a
+                ><span id="flag"> 🏳️‍🌈 </span><br /><br />
+                <a
+                  href="https://webring.bucketfish.me/redirect.html?to=next&name=shinto"
+                  >prev
+                </a>
+                <a
+                  href="https://webring.bucketfish.me/redirect.html?to=next&name=shinto"
+                >
+                  next</a
+                >
+              </div>
+            </div>
+
+            <div id="sillywebring" class="webring">
+              <iframe
+                style="width: 100%; height: 100%"
+                src="https://silly.city/embed.html?user=shinto"
+                title="silly.city webring"
+                frameborder="no"
+              ></iframe>
+            </div>
+
+            <div style="background: #222" class="webring">
+              <a style="color: #fff" href="https://netloop.netlify.app/"
+                >NetLoop Ring</a
+              ><br />
+              <a
+                style="color: #fff"
+                href="https://netloop.netlify.app/absoluterealm/previous"
+                ><img
+                  alt="netloop arrow next"
+                  style="transform: scaleX(-1)"
+                  src="https://www.personalwaifu.io/assets/netloopnext.png" /></a
+              ><img alt="netloop logo" src="https://www.personalwaifu.io/assets/netloopm.png" />
+              <a
+                style="color: #fff"
+                href="https://netloop.netlify.app/absoluterealm/next"
+                ><img alt="netloop arrow next" src="https://www.personalwaifu.io/assets/netloopnext.png"
+              /></a>
+            </div>
+
+            <div
+              style="
+                background: #fff;
+                background-image: linear-gradient(180deg, #5db986, #b0afd9);
+              "
+              class="webring"
+            >
+              <a style="color: #222" href="http://geekring.net/">geekring</a
+              ><br />
+              <a
+                style="color: #222"
+                href="http://geekring.net/site/225/previous"
+                ><&nbsp</a
+              >
+              <a style="color: #222" href="http://geekring.net/site/225/random"
+                >&nbsp&nbsp???&nbsp&nbsp</a
+              >
+              <a style="color: #222" href="http://geekring.net/site/225/next"
+                >&nbsp></a
+              >
+            </div>
+
+            <div
+              style="
+                background: #08c5e3;
+                background-image: url(https://www.personalwaifu.io/assets/hotline_banner.png);
+                background-size: cover;
+              "
+              class="webring"
+            >
+              <a style="color: #fff" href="https://hotlinewebring.club/"
+                ><i style="filter: drop-shadow(-2px 2px 0px black)"
+                  >HOTLINE WEBRING</i
+                ></a
+              ><br />
+              <a
+                style="color: #fff"
+                href="https://hotlinewebring.club/absoluterealm/previous"
+                ><&nbsp</a
+              >
+              <a
+                style="color: #fff"
+                href="https://hotlinewebring.club/absoluterealm/next"
+                >&nbsp></a
+              >
+            </div>
+
+            <div style="background: #edeae4" class="webring">
+              <a style="color: black" href="https://netloop.netlify.app/"
+                >null webring</a
+              ><br />
+              <script src="https://nuthead.neocities.org/ring/ring.js"></script>
+            </div>
+
+            <div style="background: #fff" class="webring">
+              <a style="color: black" href="https://webring.dinhe.net/"
+                >retronaut ring</a
+              ><br />
+              <a
+                style="color: black"
+                href="https://webring.dinhe.net/prev/https://theabsoluterealm.com/main/"
+                >< </a
+              ><a style="color: black" href="https://webring.dinhe.net/random"
+                >&nbsp&nbsp???&nbsp&nbsp</a
+              >
+              <a
+                style="color: black"
+                href="https://webring.dinhe.net/next/https://theabsoluterealm.com/main/"
+              >
+                ></a
+              >
+            </div>
+
+            <div style="background: #ffd8d8" class="webring">
+              <a
+                style="color: #330033"
+                href="https://cuddler-webring.netlify.app"
+                >Cuddler webring</a
+              ><br />
+              <a
+                style="color: #330033"
+                href="https://cuddler-webring.netlify.app/shinto/previous"
+                ><
+              </a>
+              <a
+                style="color: #330033"
+                href="https://cuddler-webring.netlify.app/shinto/next"
+              >
+                ></a
+              >
+            </div>
+
+            <script src="https://www.personalwaifu.io/bucketHeader.js"></script>
+            <div
+              class="webring"
+              style="
+                background-image: linear-gradient(135deg, #a1d990, #cc78b5);
+              "
+            >
+              <div id="neorings-neorings-container">
+                <a style="display: block" href="https://neorings.org/webring/1/"
+                  >Neorings</a
+                >
+                <a
+                  href="https://neorings.org/api/webring/1/previous?via=https%3A%2F%2Ftheabsoluterealm.com"
+                  >← Back</a
+                >
+
+                <a
+                  href="https://neorings.org/api/webring/1/next?via=https%3A%2F%2Ftheabsoluterealm.com"
+                  >Next →</a
+                >
+              </div>
+            </div>
+
+            <a href="https://melanated.neocities.org"
+              ><img src="https://www.personalwaifu.io/buttons/SbiooOS.png" alt="melanated"
+            /></a>
+
+            <div
+              style="
+                background-color: #56289b;
+
+                background-image: url(https://www.personalwaifu.io/assets/gridnew.gif);
+              "
+              class="webring"
+            >
+              <div
+                style=""
+                class="yw-widget-full yw-raw"
+                data-yw-url="https://theabsoluterealm.com/"
+              ></div>
+              <script src="https://yesterweb.org/js/widget.js"></script>
+              rip ] feb 20, 2023 ] you will be missed!
+            </div>
+
+            <object
+              id="melonland-surf-club"
+              data="https://melonland.net/surf-badge.svg?fill=#ffffff"
+              type="image/svg+xml"
+              style="width: 100px; height: 100px"
+            ></object>
+
+            <div style="width: 125px; margin: 0 auto">
+              <script src="https://jeith.neocities.org/assets/webring/wii-ring.js"></script>
+              <wii-ring site="https://theabsoluterealm.com"></wii-ring>
+            </div>
+
+            <div id="selfinsertwebring">
+              <script src="https://www.personalwaifu.io/self-insert.js"></script>
+            </div>
+
+            <a href="https://deltarune.com/code/" target="_blank"
+              ><img
+                id="deltarune"
+                src="https://www.personalwaifu.io/buttons/dr-secrets-webring.gif"
+                alt="game glitches and secrets webring"
+            /></a>
+          </div>
+          <div class="earthbtbleMarker">
+            <div style="right: 76%" />
+          </div>
+        </aside>
+
+        <aside class="side6">
+          <div class="ebheader"># neighbors! #</div>
+          <div style="height: auto" class="earthbtble">
+            <div id="buttonSide">
+              <a
+                class="btn"
+                href="https://mooeena.neocities.org/"
+                target="_blank"
+                ><img alt="mooeena" src="https://www.personalwaifu.io/buttons/mooeena.png" loading="lazy"
+              /></a>
+              <a class="btn" href="https://skykristal.art" target="_blank">
+                <img
+                  alt="skykristal"
+                  src="https://www.personalwaifu.io/buttons/Neobutton.png"
+                  loading="lazy"
+              /></a>
+              <a class="btn" href="https://koyo.neocities.org/" target="_blank"
+                ><img
+                  alt="koyo"
+                  src="https://www.personalwaifu.io/buttons/koyo-button-green.png"
+                  loading="lazy"
+              /></a>
+              <a
+                class="btn"
+                href="https://controlcoreangel.neocities.org/"
+                target="_blank"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/cca_neocities_button.gif"
+                  alt="control core angel"
+                  loading="lazy"
+              /></a>
+
+              <a
+                class="btn"
+                href="https://supernxva.neocities.org/"
+                target="_blank"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/supernxva.gif"
+                  alt="supernova"
+                  loading="lazy"
+              /></a>
+              <a class="btn" href="https://oaaky.neocities.org" target="_blank"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/oaakysworld.png"
+                  alt="Oaaky's World"
+                  loading="lazy"
+              /></a>
+              <a
+                target="_blank"
+                class="btn"
+                href="https://webcatz.neocities.org/"
+                ><img alt="webcatz" src="https://www.personalwaifu.io/buttons/webcatz.gif" loading="lazy"
+              /></a>
+              <a
+                class="btn"
+                href="https://netizen.neocities.org/"
+                target="_blank"
+                ><img src="https://www.personalwaifu.io/buttons/netizen.gif" alt="netizen" loading="lazy"
+              /></a>
+              <a class="btn" href="https://noodledesk.net/" target="_blank"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/noodledesk.gif"
+                  alt="Noodle Desk"
+                  loading="lazy"
+              /></a>
+              <a
+                target="_blank"
+                class="btn"
+                href="https://zinportal.neocities.org/"
+                ><img
+                  alt="zin portal"
+                  src="https://www.personalwaifu.io/buttons/zinbottone.png"
+                  loading="lazy"
+              /></a>
+              <a
+                class="btn"
+                href="https://ninacti0n.neocities.org/"
+                target="_blank"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/ninaction-lab.gif"
+                  alt="ninaction lab"
+                  loading="lazy"
+              /></a>
+              <a
+                target="_blank"
+                class="btn"
+                href="https://nine-moonbeams.neocities.org/"
+                ><img
+                  alt="nine moonbeams"
+                  src="https://www.personalwaifu.io/buttons/nine-moonbeams.gif"
+                  loading="lazy"
+              /></a>
+              <a
+                target="_blank"
+                class="btn"
+                href="https://ceterumcenseo.neocities.org/"
+                ><img alt="ceterum" src="https://www.personalwaifu.io/buttons/ceterum.png" loading="lazy"
+              /></a>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://robophobia.neocities.org/"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/robophobia_button.gif"
+                  alt="robophobia"
+                  loading="lazy"
+              /></a>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://bechnokid.neocities.org/"
+                ><img
+                  loading="lazy"
+                  src="https://www.personalwaifu.io/buttons/bencho-kids-hideout.jpg"
+                  alt="bencho kid's hidehout"
+              /></a>
+              <a class="btn" target="_blank" href="https://nonkiru.art/"
+                ><img src="https://www.personalwaifu.io/buttons/nonkiru.gif" alt="nonkiru" loading="lazy"
+              /></a>
+              <a
+                class="btn"
+                href="https://craggerlongclaw.neocities.org/"
+                target="_blank"
+                loading="lazy"
+              >
+                <img
+                  src="https://www.personalwaifu.io/buttons/skragonmilk.gif"
+                  alt="skragon milk"
+                  loading="lazy"
+              /></a>
+              <a
+                class="btn"
+                href="https://starrs.neocities.org/"
+                target="_blank"
+              >
+                <img
+                  src="https://www.personalwaifu.io/buttons/tiny_space.gif"
+                  alt="a tiny space in space"
+                  loading="lazy"
+              /></a>
+              <a class="btn" target="_blank" href="https://mayf.pink/"
+                ><img src="https://www.personalwaifu.io/buttons/mayf.gif" loading="lazy" alt="mayf.pink"
+              /></a>
+              <a class="btn" target="_blank" href="https://ryzzica.xyz"
+                ><img src="https://www.personalwaifu.io/buttons/jecket.gif" alt="jecket.xyz" loading="lazy"
+              /></a>
+
+              <a
+                class="btn"
+                target="_blank"
+                href="https://kopawz.neocities.org/"
+                ><img src="https://www.personalwaifu.io/buttons/koscrag.gif" alt="kopawz" loading="lazy"
+              /></a>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://dreemurr.neocities.org"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/terriermonbutton.gif"
+                  alt="chimera's corner"
+                  loading="lazy"
+              /></a>
+
+              <a
+                class="btn"
+                href="https://sugarblush.neocities.org/"
+                target="_blank"
+                ><img
+                  alt="sugar blush"
+                  src="https://www.personalwaifu.io/buttons/sugarblush_button.png"
+                  loading="lazy"
+              /></a>
+              <a
+                class="btn"
+                href="https://phrogee.neocities.org/"
+                target="_blank"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/phrogee_02.gif"
+                  alt="phrogee"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="btn"
+                href="https://loafsona.neocities.org"
+                target="_blank"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/loaf_background.png"
+                  alt="loaf's zone"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="btn"
+                href="https://stormeko.neocities.org"
+                target="_blank"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/stormeko.png"
+                  alt="stormeko"
+                  loading="lazy"
+                />
+              </a>
+              <a class="btn" target="_blank" href="https://sioned.neocities.org"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/sidsitebtn.gif"
+                  alt="sids site"
+                  loading="lazy"
+              /></a>
+              <a
+                class="btn"
+                target="_blank"
+                href="https://radiationcat.neocities.org/"
+                ><img
+                  src="https://www.personalwaifu.io/buttons/radinow.png"
+                  alt="radiationcat"
+                  loading="lazy"
+              /></a>
+
+              <a target="_blank" href="https://hijpixel.neocities.org/"
+                ><img
+                  alt="hijpixel"
+                  src="https://hijpixel.neocities.org/assets/images/buttons/hijpixel-button.gif"
+                  loading="lazy"
+              /></a>
+            </div>
+          </div>
+          <div class="earthbtbleMarker">
+            <div style="right: 10%" />
+          </div>
+        </aside>
+        <aside style="display: none" class="side7">
+          <div style="width: 208px" class="clocktble">
+            <p
+              id="hour"
+              style="
+                position: absolute;
+                color: #000;
+                font-family: battle;
+                font-size: 46px;
+                line-height: 42px;
+                transform: translate(5px, -8px);
+                letter-spacing: 4px;
+                animation: none;
+              "
+            >
+              00
+            </p>
+            <p
+              id="minute"
+              style="
+                position: absolute;
+                color: #000;
+                font-family: battle;
+                font-size: 46px;
+                line-height: 42px;
+                transform: translate(61px, -11px);
+                letter-spacing: 4px;
+                animation: none;
+              "
+            >
+              00
+            </p>
+            <img class="timeImg" src="https://www.personalwaifu.io/assets/timebk.gif" alt="" />
+            <img class="timeImg" src="https://www.personalwaifu.io/assets/timebk.gif" alt="" />
+          </div>
+        </aside>
+      </div>
+
+      <br />
+
+      <!-- Buttons and Statistics -->
+      <footer>
+        <div class="earthbtble">
+          <a
+            class="btn"
+            id="enbyBtn"
+            style="image-rendering: pixelated"
+            target="_blank"
+            ><img
+              onclick="setTheme('enby'); thelogo.src = 'assets/logo-enby.gif'; PlaySound('yahoo')"
+              alt="NONBINARY FLAG!!"
+              src="https://www.personalwaifu.io/buttons/enby.gif"
+          /></a>
+          <br />
+          <a
+            class="btn"
+            href="https://the-not-so-secret-lounge.neocities.org/"
+            target="_blank"
+            ><img
+              alt="thelounge button"
+              src="https://www.personalwaifu.io/buttons/thelounge.png"
+              onmouseover="Tip(event, 'My best friend and family man.')"
+              onmouseout="UnTip()"
+          /></a>
+          <a class="btn" href="https://tuftedtavern.carrd.co" target="_blank"
+            ><img
+              onmouseover="Tip(event, 'RUG TUFTING BESTIE!!! CHECK OUT HIS RUGS!!')"
+              onmouseout="UnTip()"
+              loading="lazy"
+              alt="tufted tavern"
+              src="https://www.personalwaifu.io/buttons/tuftedtavernbutton.png"
+          /></a>
+
+          <a class="btn" href="https://erosu.carrd.co/" target="_blank"
+            ><img
+              alt="eros button"
+              src="https://www.personalwaifu.io/buttons/erosbutton.gif"
+              onmouseover="Tip(event, 'My awesome Roommate and best friend!')"
+              onmouseout="UnTip()" /></a
+          ><br />
+
+          <a class="btn" href="https://neocities.org/" target="_blank"
+            ><img
+              alt="hardware acceleration button"
+              src="https://www.personalwaifu.io/buttons/hardware.gif"
+          /></a>
+          <a class="btn" href="https://code.visualstudio.com/" target="_blank"
+            ><img alt="visual studio button" src="https://www.personalwaifu.io/buttons/vscbutton.gif"
+          /></a>
+
+          <a class="btn" href="https://mountainduck.io/" target="_blank"
+            ><img alt="mountain duck button" src="https://www.personalwaifu.io/buttons/mdwindows.gif"
+          /></a>
+          <a class="btn" href="https://neocities.org/" target="_blank"
+            ><img
+              alt="neocities.org, the web is yours button"
+              src="https://www.personalwaifu.io/buttons/neocities.gif"
+              onmouseover="Tip(event, 'Website\'s server hosted by neocities.org <3')"
+              onmouseout="UnTip()"
+          /></a>
+          <a class="btn" href="https://www.goatcounter.com/" target="_blank"
+            ><img
+              alt="goat counter button"
+              onmouseover="Tip(event, 'Free Statistics / Analytics!')"
+              onmouseout="UnTip()"
+              src="https://www.personalwaifu.io/buttons/goatCounter.gif"
+          /></a>
+          <a class="btn" href="https://neocities.org/" target="_blank"
+            ><img
+              alt="web design is my passion button"
+              src="https://www.personalwaifu.io/buttons/webpassion.gif"
+          /></a>
+          <a class="btn" href="https://status.cafe/users/shinto" target="_blank"
+            ><img
+              onmouseover="Tip(event, 'Statuses provided by status.cafe!')"
+              onmouseout="UnTip()"
+              alt="status cafe"
+              src="https://www.personalwaifu.io/buttons/statuscafe.png"
+          /></a>
+
+          <!-- Antipixel button showcase -->
+
+          <div style="image-rendering: pixelated">
+            <img alt="ezroue brilliant button" src="https://www.personalwaifu.io/buttons/bb-ezroue.png" />
+            <img alt="coskard brilliant button" src="https://www.personalwaifu.io/buttons/bb-coskard.png" />
+            <img alt="bulbean brilliant button" src="https://www.personalwaifu.io/buttons/bb-bulbean.png" />
+            <img
+              alt="kekaikou brilliant button"
+              src="https://www.personalwaifu.io/buttons/bb-kekaikou.png"
+            />
+            <img
+              alt="absolute realm brilliant button"
+              src="https://www.personalwaifu.io/buttons/bb-absolute-realm.png"
+            />
+            <img alt="taeknik brilliant button" src="https://www.personalwaifu.io/buttons/bb-taeknik.png" />
+            <img alt="shinto brilliant button" src="https://www.personalwaifu.io/buttons/bb-shinto.png" />
+
+            <img alt="xyn brilliant button" src="https://www.personalwaifu.io/buttons/bb-xyn.png" />
+          </div>
+
+          <div></div>
+
+          <h1 id="ebtext">~ handled with care since feb 2022 ~</h1>
+
+          <div class="earthbtbleMarker">
+            <div style="right: 17%; transform: translate(0px, 3px)"></div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Statistics -->
+      <div class="theEnd" style="padding-bottom: 150px">
+        <script src="https://counter1.fc2.com/views.php?id=89499059"></script>
+        <noscript
+          ><img
+            alt="Flashy Rainbow-ish online counter"
+            src="https://counter1.fc2.com/counter_now.php?id=89499059" /></noscript
+        ><br />
+        <script
+          src="https://counter1.fc2.com/counter.php?id=89499059"
+          title=""
+        ></script>
+        <noscript
+          ><img
+            alt="Flashy Rainbow-ish unique hit counter"
+            src="https://counter1.fc2.com/counter_img.php?id=89499059"
+            title="" /></noscript
+        ><br />
+        <script
+          language="javascript"
+          type="text/javascript"
+          src="https://counter1.fc2.com/counter.php?id=89503770"
+        ></script>
+        <noscript
+          ><img
+            alt="Flashy Rainbow-ish hit counter"
+            src="https://counter1.fc2.com/counter_img.php?id=89503770"
+        /></noscript>
+
+        <script
+          data-goatcounter="https://theabsoluterealm.goatcounter.com/count"
+          async
+          src="https://gc.zgo.at/count.js"
+        ></script>
+
+        <a
+          id="singularity"
+          class="nav"
+          onclick="transition();"
+          href="javascript:void(0)"
+        >
+          <h3
+            style="
+              font-family: geo;
+              font-size: 18px;
+              filter: drop-shadow(0px 0px 2.5px white);
+              animation: color-change infinite ease-in-out 5s;
+              width: 223px;
+              margin: auto;
+            "
+          >
+            << Head back to the <em>-Singularity-</em>
+          </h3>
+        </a>
+        <a id="mobilesingularity" class="nav" href="index.html">
+          <h3
+            style="
+              font-family: geo;
+              font-size: 18px;
+              filter: drop-shadow(0px 0px 2.5px white);
+              animation: color-change infinite ease-in-out 5s;
+            "
+          >
+            << Head back to the <em>-Singularity-</em>
+          </h3>
+        </a>
+      </div>
+    </div>
+
+    <!-- The Secret Fairy Animation -->
+    <div class="fullscreen-bg" id="faries">
+      <img
+        alt="An aniamtion showing lines 'faries' that fly across the screen when the user inputs the 'Secret Fairy Code' correctly."
+        src="main/assets/secretFairy.gif"
+      />
+    </div>
+
+    <!-- I'm sorry if this appears when you least expect it -->
+    <div class="dialogue" id="fen">
+      <img src="https://www.personalwaifu.io/assets/fen.gif" style="width: 500px; height: 500px;"" alt="the
+      thing" />
+    </div>
+
+    <img
+      id="kisser"
+      style="display: none"
+      src="https://www.personalwaifu.io/assets/kisser.gif"
+      alt="boykisser"
+    />
+
+    <!-- ~The Sacred audios that play when you do something~ -->
+    <audio id="openUp" preload="auto">
+      <source src="https://www.personalwaifu.io/assets/openUp.ogg" />
+    </audio>
+    <audio id="closeUp" preload="auto">
+      <source src="https://www.personalwaifu.io/assets/closeUp.ogg" />
+    </audio>
+    <audio id="textSound" preload="auto">
+      <source src="https://www.personalwaifu.io/assets/textSound.ogg" />
+    </audio>
+    <audio id="click"><source src="https://www.personalwaifu.io/assets/drIntro.ogg" /></audio>
+    <audio id="yahoo" preload="auto">
+      <source src="https://www.personalwaifu.io/assets/yahoo-ps02.ogg" />
+    </audio>
+
+    <!-- ~the magic~  -->
+    <script src="https://www.personalwaifu.io/fps.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+
+    <script
+      src="https://status.cafe/current-status.js?name=shinto"
+      defer
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+
+    <script src="https://www.personalwaifu.io/quotes.js"></script>
+    <script src="https://www.personalwaifu.io/status.js"></script>
+    <script src="https://www.personalwaifu.io/puzzles.js"></script>
+
+    <script src="https://www.personalwaifu.io/universalScripts/tooltip.js"></script>
+    <script src="https://www.personalwaifu.io/themes.js"></script>
+    <script src="https://www.personalwaifu.io/date_events.js"></script>
+
+    <script src="https://www.personalwaifu.io/nowplaying.js"></script>
+
+    <!-- Inline cuz its reserved for this page only! -->
+
+    <script>
+      var first_visit = !localStorage.getItem("was_visited");
+      if (first_visit) {
+        localStorage.setItem("was_visited", 1);
+      }
+
+      document.getElementById("coolStuff").href = "javascript:void(0)";
+      document.getElementById("resources").href = "javascript:void(0)";
+      updateClock();
+      setTheme(localStorage.themed);
+
+      var cafeStatus = document.getElementById("statuscafe-content"),
+        textSound = document.getElementById("textSound"),
+        sheee = document.getElementById("activateTitle"),
+        bar = document.querySelector(".mobilenavigate"),
+        navb = document.querySelector(".navbutton"),
+        overlay = document.querySelector(".overlay");
+
+      function PlaySound(soundobj) {
+        var thissound = document.getElementById(soundobj);
+        thissound.volume = 0.25;
+        thissound.currentTime = 0;
+        thissound.play();
+      }
+
+      document
+        .getElementById("activateIframe")
+        .addEventListener("mouseover", function () {
+          PlaySound("openUp", 0.5);
+        });
+
+      document
+        .getElementById("activateIframe")
+        .addEventListener("mouseleave", function () {
+          PlaySound("closeUp", 0.1);
+        });
+
+      function clearCache() {
+        window.location.reload(true);
+      }
+
+      navb.addEventListener("click", openBar);
+      window.addEventListener("click", closeBar);
+
+      function openBar() {
+        bar.style.display = "block";
+        navb.style.display = "none";
+        overlay.style.display = "block";
+      }
+
+      function closeBar(e) {
+        if (e.target == overlay) {
+          bar.style.display = "none";
+          overlay.style.display = "none";
+          navb.style.display = "block";
+        }
+      }
+
+      function fade(color, time) {
+        const elem = document.getElementById("fade");
+        elem.style.display = "block";
+        elem.style.backgroundColor = color;
+        let val = 0;
+        let id = setInterval(frame, 1);
+
+        function frame() {
+          if (val >= 1) {
+            clearInterval(id);
+          } else {
+            val += time;
+            elem.style.opacity = val;
+          }
+        }
+      }
+
+      function TVtransition() {
+        let body = document.body;
+        body.scrollTop = 0;
+        fade("white", 0.012);
+        body.style.cssText =
+          "height: 100vh; overflow: hidden; transition: all 0.25s; transform: scaleY(0.001);";
+        setTimeout(() => {
+          body.style.transform = "scaleY(0) scaleX(0)";
+          setTimeout(() => (window.location.href = "resourcesNtools/"), 250);
+        }, 250);
+      }
+
+      function transition() {
+        document.getElementById("click").play();
+        fade("#fff", 0.002);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        document
+          .getElementById("click")
+          .addEventListener("ended", () => (window.location.href = "/"));
+      }
+
+      function linkTransition() {
+        fade("black", 0.012);
+        document.body.style.overflow = "hidden";
+        setTimeout(() => (window.location.href = "CoolStuff/"), 1000);
+      }
+
+      console.log(
+        "%cGreetings to the main page! Did you know that the keystrokes you make on this page may cause something to happen? Something you may spell out? or maybe a combination of inputs will trigger events!",
+        "color: #f3f1ad"
+      );
+      console.log(
+        "%cI hope to add as many puzzles and references on this main page, so good luck and enjoy your stay! <3",
+        "color: #f3f1ad"
+      );
+    </script>
+  </body>
+</html>
